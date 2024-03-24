@@ -66,6 +66,7 @@
 
 body {
     margin: 0;
+    color: var(--black) !important;
     font-family: 'Neutra Text', sans-serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

@@ -4,9 +4,6 @@ import {ProductContext} from "../store/ProductContext";
 
 const UsersPage = () => {
     const productContext = useContext(ProductContext);
-
-    // TODO -hamza fix here labels and fields select 12
-
     const tableLabels = [
         "TITLE",
         "BRAND",
