@@ -1,7 +1,7 @@
 import {FaSearch} from "react-icons/fa";
 import styles from "./Search.module.css";
 
-const Search = ({ data, searchTerm, setSearchTerm, isSearchVisible, setIsSearchVisible, setSearchFilteredData }) => {
+const Search = ({searchTerm, setSearchTerm, isSearchVisible, setIsSearchVisible}) => {
     const handleSearch = event => {
         setSearchTerm(event.target.value);
     };

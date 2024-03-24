@@ -1,6 +1,6 @@
 import styles from "./PageSize.module.css";
 
-const PageSize = ({ pageSize, setPageSize }) => {
+const PageSize = ({pageSize, setPageSize}) => {
     const handlePageSizeChange = async (event) => {
         const newSize = event.target.value;
         setPageSize(newSize);

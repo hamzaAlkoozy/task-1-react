@@ -84,12 +84,6 @@ export const UserProvider = ({ children }) => {
         setSearchFilteredData(filteredData);
     }, [searchTerm]);
 
-    // useEffect(() => {
-    //     if (key !== context.fieldSearchKey) {
-    //         context.setFieldSearchTerm('');
-    //     }
-    // }, [fieldSearchKey])
-
     const contextValue = {
         data,
         setData,

@@ -4,6 +4,15 @@ import {ProductContext} from "../store/ProductContext";
 
 const UsersPage = () => {
     const productContext = useContext(ProductContext);
+
+    if (productContext.isLoading) {
+        return (
+            <div>
+                Loading....
+            </div>
+        )
+    }
+
     const tableLabels = [
         "TITLE",
         "BRAND",
@@ -15,14 +24,6 @@ const UsersPage = () => {
         "brand",
         "category",
     ]
-
-    if (productContext.isLoading) {
-        return (
-            <div>
-                Loading....
-            </div>
-        )
-    }
 
     const filteringDropdownFields = [
         {label: 'Category', keyProp: 'category'},

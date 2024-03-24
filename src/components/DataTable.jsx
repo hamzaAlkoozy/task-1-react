@@ -7,7 +7,7 @@ import DataTableContent from "./DataTableContent";
 import styles from "./DataTable.module.css";
 
 
-const DataTable = ({context, labels, fields, filteringFields, filteringDropdownFields, TableComponent}) => {
+const DataTable = ({context, labels, fields, filteringFields, filteringDropdownFields}) => {
     const handleSearchKeyChange = (key) => {
         context.setFieldSearchKey(key);
         if (key !== context.fieldSearchKey) {
@@ -21,6 +21,7 @@ const DataTable = ({context, labels, fields, filteringFields, filteringDropdownF
                 <div className={`${styles.componentMargin} ${styles.sectionBordered}`}>
                     <PageSize pageSize={context.pageSize} setPageSize={context.setPageSize}/>
                 </div>
+
                 <div className={`${styles.componentMargin} ${styles.sectionBordered}`}>
                     <Search data={context.data}
                             searchTerm={context.searchTerm}

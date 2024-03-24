@@ -18,7 +18,8 @@ const Breadcrumbs = () => {
                     let capitalizedValue = value.charAt(0).toUpperCase() + value.slice(1);
 
                     return (
-                        <li className={isCurrentPage ? styles.breadcrumbItemSelected : styles.breadcrumbItem} key={index}>
+                        <li className={isCurrentPage ? styles.breadcrumbItemSelected : styles.breadcrumbItem}
+                            key={index}>
                             {index >= 0 && <span className={styles.separator}>/</span>}
                             <Link to={to}>{capitalizedValue}</Link>
                         </li>

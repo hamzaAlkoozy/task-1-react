@@ -73,7 +73,7 @@ export const ProductProvider = ({ children }) => {
         setSearchFilteredData(filteredData);
     }, [searchTerm]);
 
-    // Fetch categories from dummyjson API
+    // Fetch categories from DummyJSON API
     useEffect(() => {
         const fetchCategories = async () => {
             const url = 'https://dummyjson.com/products/categories';
