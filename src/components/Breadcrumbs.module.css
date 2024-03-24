@@ -1,0 +1,16 @@
+.breadcrumbItem a {
+    text-decoration: none;
+    color: var(--black);
+    margin-right: 5px;
+}
+
+.breadcrumbItemSelected a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--black);
+    background-color: var(--yellow);
+}
+
+.separator {
+    margin-right: 5px;
+}

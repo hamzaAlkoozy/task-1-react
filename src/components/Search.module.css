@@ -1,0 +1,10 @@
+.searchIcon {
+    border: none;
+    background: none;
+    color: var(--black);
+}
+
+.searchInput {
+    border: none;
+    border-bottom: 1px solid var(--black);
+}

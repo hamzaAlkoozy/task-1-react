@@ -1,0 +1,8 @@
+.componentMargin {
+    margin: 5px !important;
+}
+
+.sectionBordered {
+    border-right: 3px var(--grey) solid;
+    padding-right: 15px;
+}

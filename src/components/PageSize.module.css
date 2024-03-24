@@ -1,0 +1,9 @@
+.customSelect {
+    color: var(--black) !important;
+    border: none !important;
+}
+
+.customSelect:focus {
+    border: 1px solid var(--black) !important;
+    box-shadow: none !important;
+}
